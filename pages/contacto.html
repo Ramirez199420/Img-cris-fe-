@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es" style="background-color: #e3f2fd;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CONTACTO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="../index.html"><img src="../icons/Logo Sacros.png" alt="logoikon" width="100px" style="background-color: #a47f00;"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link" href="../index.html">INICIO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link " href="conocenos.html">CONOCENOS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="Cursos.html">CURSOS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="galeria.html">GALERIA</a>
+               </li>
+             </ul>
+            <!--<form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>-->
+           </div>
+         </div>
+  </nav>
+ <main>
+           <!--contenido principal estructura #2-->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <img src="../Images/imagen principal/DWrublev.webp" class="d-block w-100" alt="1">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="../Images/imagen principal/Imgpasionslide.webp" class="d-block w-100" alt="2">
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="../Images/imagen principal/DWrublev.webp" class="d-block w-100" alt="3">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>      
+<section class="contact_form">
+    <article class="formulario">      
+      <h1>Contactanos</h1>
+        <h3>¿Quieres adquirir algunos de nuestros iconos?</h3>
+          <form action="submeter-formulario.php" method="post">       
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+                <p>
+                  <label for="website" class="colocar_website">Sitio web
+                  </label>
+                    <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                </p>    
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                </p>                                  
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>                   
+          </form>
+    </article>  
+  </section>
+ </main>
+    <footer id="footer">
+        <!--pie de pagina estructura #3-->
+          <!--cajas del footer/ la primera del logo-->
+        <article class="footer__logo">
+            <img src="../icons/Logo big.png" alt="logogb">
+
+        </article>
+         <!--cajas del footer/ la 2da link de navegacion-->
+        <article class="footer__links">
+             <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="conocenos.html">CONOCENOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="escuela.html">ESCUELA</a></li>
+                <li><a href="galeria.html">GALERIA</a></li>
+             </ul>
+        </article>
+         <!--cajas del footer/ la 3ra link de redes-->
+        <article class="footer__redes">
+            <a href="https://instagram.com/tallerikon3?igshid=OGY3MTU3OGY1Mw=="><img src="../icons/icono de instagram.jpeg" alt="instagramikon"></a> 
+            <a href="mailto:sacrosartesadf@gmail.com"><img src="../icons/icono de mail.png" alt="mailikon"></a>
+            <a href="tel:+541138426352"><img src="../icons/icono de telefono.jpeg" alt="telefonoikon"></a>
+            <a href="https://t.me/Ikonadf"><img src="../icons/icono de telegram.png" alt="telegramikon"></a>
+          </article>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

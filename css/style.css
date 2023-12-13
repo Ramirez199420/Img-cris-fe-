@@ -1,0 +1,580 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;/*para que no sea bruto el acceso a la pagina anclada*/
+    scroll-padding-top: 70px;/*para que no oculte el encabezado del anclaje y lo presente bien y tampoco pisa a la caja en si*/
+   font-family: 'Times New Roman', Times, serif;
+    /* border: ;*/
+}
+/*pagina de index*/
+#cardsprimus {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+#cardsecundus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 2.5%;
+}
+.card2{
+        padding-top: 7.2%;
+        padding-bottom: 15%;
+    }
+.card4{
+    padding-top: 7.2%;
+    padding-bottom: 15%;
+}
+.art1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+}
+/*pagina de conocenos*/
+    /*texto debajo de la img ppal*/
+.card-body23{
+    display: flex;
+    text-align: center;
+    padding: 40px;
+
+}
+/*pagina de contacto, parte de formulario comun con el index*/
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfb;
+ /* background-image: linear-gradient(white, #b58b02); */
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #a47f00; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #a47f00; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #a47f00; 
+  border-color: #a47f00; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+
+span{
+  color: #a47f00; 
+}
+
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #a47f00;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+p{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #111110;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #8f8d88;
+}
+
+
+ 
+/*
+.= se palica para el llamado de una clase
+#= se aplica para el llamdo de un ID 
+los selectores se llaman por su nombre simplemente*/
+/*SPV: selector. propiedad. valor*/
+/*los selectores son todas nuestras etiquetas html*/
+/*partimos de un orden jerarquico para llegar a la imagen = a selectores*/
+body /* {
+    background-image: url(../Images/iconografia/resurreccion.jpeg);
+} esto se usa para poner una imgen de auna letra o algo asi
+    background size: cover(); para que sirve?*/
+main {
+    padding-top: 70px;
+    min-height: 100vh;
+    /*backdrop-filter: blur(10); esto sirve para generar opacidad o transparencia de imagen y se aplica a la etiqueta COLOR */ 
+
+}
+/*Posicion del contenido escrito dentro de la imagen*/
+
+/*#DWrublev {
+    position: relative;
+}
+#DWrublev img {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+#DWrublev .DWrublev__contenido {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    top: 0;
+} 
+.DWrublev__titulo , 
+.DWrublev__parrafo {
+    margin-top: 5px;
+}
+.DWrublev__titulo h2 {
+    text-align: center;
+}*/
+
+ /*dentro aplicaremos propiedades y a esas propiedades sus repectivos valores */ 
+    /* tipos de medidas
+    % tamaño relativo
+    px tamaño fijo
+    vh: se agrega a height si quiero que tome toda la pantalla
+    vw:se a width si quiero que tome todo el ancho*/
+
+.frase2 {
+    background-color: rgb(161, 119, 14);
+    width: 100%;
+    height: 100px;
+
+    
+
+}
+.frase2 h2 {
+    text-align: center;
+    align-items: center;
+   
+
+}
+.frase2 h2 div a {
+    text-align: center;
+    margin-top: 14px;
+    
+}
+/*METODOLOGIA BEM= BLOQUE /ELEMENTO /MODIFICADOR */
+/*#presentaciondeikons {
+    width: 100%;
+    height: auto;
+    /*background-color: #ffffff;color de fondo de la img en el index*/ 
+   /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    
+
+   /* position: sticky;
+    top: 0;
+    z-index: 101; todo este ternario conjunto sirve para decir donde quiero que se detenga una parte de la pagina
+    ya sea para ir induciendo al cliente en lo que le quiero vender etc*/
+    /*position: relative;*/
+/*#presentaciondeikons img {
+    width: 300px;
+    height: 400px;
+}
+/*#presentaciondeikons article { /*esto es para darle fondo al cuadro, si es que yiene un fondo propio*/
+
+/*estilos footer comun a todos los links*/
+#footer {
+   /* position: relative;
+    bottom: 0;*/
+    margin-top: auto; 
+    width: 100%;
+    height: auto;
+    background-color: rgb(161, 119, 14);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    /*gap: 80px;*/
+
+}
+.footer__logo img{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5px;
+}
+.footer__links ul {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+.footer__links ul li a{
+    box-shadow: 2px 2px white;
+    transition: 2s;
+    background-image: linear-gradient(to letf gray, black);
+}
+.footer__links ul li {
+    list-style-type: none;
+}
+.footer__redes a img {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+/*+++++++++++++++++++++++++++++++++*/
+/*PAGINA DE GALERIA con grid*/
+/*+++++++++++++++++++++++++++++++++*/
+
+.cardg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .card-bodyg{
+        padding: 8%;
+    }
+}
+.letragrande{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1%;
+    background-color:  darkgoldenrod;
+    text-align: center;
+}
+#f4{
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+}  
+   /*Caja de los Cuatro Animales*/
+
+
+/* pantocrator galeria */
+
+/*form{
+    width: 100%;
+    height: auto;
+}*/
+/*#galeriaikon {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    /*row-gap: 10px;
+    column-gap: 10px;*/
+   /* gap: 15px;
+    grid-template-areas: 
+     "grideikonos1 grideikonos2 grideikonos3"/*permite decidir donde va a ir a cada imagen*/
+                         
+   /*  "grideikonos4 grideikonos5 grideikonos6";
+}*/
+/*.grideikonos1
+{
+    background-image: url(../Images/img,fotosdegaleria/.grideikonos1);/*,y dentro del  parentesis llamar de modo absolutoa la imagen,hacer ruta absoluta de la imagen sin necesidada de etiquetar con html*/
+    /*background-size: cover; /* el size es para  el tamaño de magen llamado y el cover para quese cubra al tamaño de caja que tenga disponible*/
+    /*background-repeat: no-repeat;
+    background-position: center;*/
+/*}
+.grideikonos2{
+    background-image: url(../Images/img,fotosdegaleria/.grideikonos2);
+    background-size: cover;
+}
+.grideikonos3{
+    background-image: url(../Images/img,fotosdegaleria/.grideikonos3);
+    background-size: cover;
+}
+.grideikonos4{
+    background-image: url(../Images/img,fotosdegaleria/.grideikonos4);
+    background-size: cover;
+}
+.grideikonos5{
+    background-image: url(../Images/img,fotosdegaleria/.grideikonos5);
+    background-size: cover;
+}   
+.grideikonos6{
+    background-image: url(../Images/img,fotosdegaleria/.grideikonos6);
+    background-size: cover;
+}
+.grideikonos1 img{
+    width:100%;
+    height: 400px;
+    grid-area: grideikonos1;
+}
+.grideikonos2 img{
+    width:100%;
+    height: 400px;
+    grid-area: grideikonos2;
+}
+.grideikonos3 img{
+    width:100%;
+    height: 400px;
+    grid-area: grideikonos3;
+}
+.grideikonos4 img{
+    width:100%;
+    height: 400px;
+    grid-area: grideikonos4;
+}
+.grideikonos5 img{
+    width: 100%;
+    height: 400px;
+    grid-area: grideikonos5;
+}
+.grideikonos6 img{
+    width: 100%;
+    height: 400px;
+    grid-area: grideikonos6;
+}
+#galeriaikon/**/
+/*{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+                        "ikons1 ikons2 ikons3"
+                        "ikons1 ikons2 ikons4"
+                        "ikons5 ikons5 ikons6";
+    gap: 10px;
+}
+/*galeria imag*/
+/**#galeriaimag{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);*/
+/**.titleimag*/
+/**{
+    grid-column: 3/4;/*en donde quiero ubicar mi titulo o info en las grillas*/
+   /** grid-row: 1/2;/*se ubica en las filas lo escrito en mas palabras */
+   /** overflow: scroll;/*con esto se oculta los elementos se hace un slide de textos*/
+#ikonsimag
+{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas: 
+                        "ikons1 ikons2"
+                        "ikons1 ikons2"
+    ;
+    gap: 10px;
+}
+.tamañoBox{
+    position: relative;
+}
+.tamañoBox h1{
+    position: absolute;/*junto con el relative nos rea el esapcio en el que se pueda poner el text en la imagen*/
+    top: 0;
+    background-color: darkgoldenrod;
+    text-align: center;
+    width: 100%;
+
+}
+.tamañoBox img
+{
+    width: 800px;
+    height: 400px;
+}
+.Ikons1{
+    grid-area: ikons1;/*para indicar a la img que lugar ocupar dentro de la grilla */
+}
+.Ikons2{
+    grid-area: ikons2;
+}
+
+
+
+/*diseño responsive*/
+@media (max-width: 768px) {
+    #frase2 {
+        max-width: auto;
+    }
+
+}
+@media (max-width: 480px) {
+    #frase2 {
+        max-width: auto;
+    }
+
+}
+@media (max-width: 768px){
+    #galeriaimgs{
+        grid-template-areas: none;
+
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    #ikonsimag{
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+                        "ikons1"
+                        "ikons1"
+                        "ikons2"
+                        "ikons2"
+
+    }
+    .tamañoBox img 
+    .tamañoBox h1{
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    #ikonsimag{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+                        "ikons1"
+                        "ikons1"
+                        "ikons2"
+                        "ikons2"
+
+    }
+    .tamañoBox img,
+    .tamañoBox h1 {
+        max-width: auto;
+    }
+}
+
+
+/*sistema responsivo del footer*/
+@media (max-width: 768px){
+    .footer__logo img{
+        width: 100%;
+        height: auto;
+    }
+    .footer__redes a img{
+        width: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .footer__links ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+@media (max-width: 480px){
+    #footer{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 0;
+    }
+    .footer__logo img{
+        width: 100%;
+        height: auto;
+    }
+    .footer__links ul/*:nth-child(3)a, la a esta es el link que me debe aparecer:hover, y se agrega el color en la llave, es la ue va a a reaccionrcuando se pasa el mouse*/
+    { 
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+    .footer__redes a img{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+    }
+}
+/*Flex Wrap es para hacer salto de lineas y asi las cajas se van ubicando una debajo de las otras respetando el sistema responsivo*/

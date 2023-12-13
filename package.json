@@ -1,0 +1,19 @@
+{
+  "name": "primeros-pasos-dw-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/49655goo/pp-49655-goo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/49655goo/pp-49655-goo/issues"
+  },
+  "homepage": "https://github.com/49655goo/pp-49655-goo#readme",
+  "description": ""
+}
