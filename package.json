@@ -1,19 +1,22 @@
 {
-  "name": "primeros-pasos-dw-1",
+  "name": "pp-dw-1",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/49655goo/pp-49655-goo.git"
+    "url": "git+https://github.com/Ramirez199420/Img-cris-fe-.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/49655goo/pp-49655-goo/issues"
+    "url": "https://github.com/Ramirez199420/Img-cris-fe-/issues"
   },
-  "homepage": "https://github.com/49655goo/pp-49655-goo#readme",
-  "description": ""
+  "homepage": "https://github.com/Ramirez199420/Img-cris-fe-#readme",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
 }
