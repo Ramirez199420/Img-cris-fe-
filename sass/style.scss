@@ -1,6 +1,5 @@
 /*RESET CSS*/
-*{
-    margin: 0;
+*{  margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;/*para que no sea bruto el acceso a la pagina anclada*/
@@ -8,7 +7,16 @@
    font-family: 'Times New Roman', Times, serif;
     /* border: ;*/
 }
+/*EL FOOTER TIENE LA MISMA ESTRUCTURA PARA CADA INDEX */
 /*pagina de index*/
+/*Encabezado de inicio*/
+.art1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+}
+/*Pantocrator*/
 #cardsprimus {
     display: flex;
     flex-direction: row;
@@ -17,6 +25,7 @@
     padding-top: 15%;
     padding-bottom: 15%;
 }
+   /*Virgen de fatima*/
 #cardsecundus{
     display: flex;
     flex-direction: row;
@@ -25,19 +34,17 @@
     justify-content: space-between;
     padding-top: 2.5%;
 }
-.card2{
-        padding-top: 7.2%;
-        padding-bottom: 15%;
-    }
-.card4{
-    padding-bottom: 15%;
+   /*la Virgen de las fuentes*/
+.card2
+{
     padding-top: 7.2%;
+    padding-bottom: 15%;
 }
-.art1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 5%;
+   /*Angel de la Guarda*/
+.card4
+{
+    padding-top: 7.2%;
+    padding-bottom: 15%;
 }
 /*pagina de conocenos*/
     /*texto debajo de la img ppal*/
@@ -170,9 +177,6 @@ p{
   outline:0;
   border: 1px solid #8f8d88;
 }
-
-
- 
 /*
 .= se palica para el llamado de una clase
 #= se aplica para el llamdo de un ID 
@@ -180,18 +184,16 @@ los selectores se llaman por su nombre simplemente*/
 /*SPV: selector. propiedad. valor*/
 /*los selectores son todas nuestras etiquetas html*/
 /*partimos de un orden jerarquico para llegar a la imagen = a selectores*/
-body /* {
-    background-image: url(../Images/iconografia/resurreccion.jpeg);
+/*body /* {
+background-image: url(../Images/iconografia/resurreccion.jpeg);
 } esto se usa para poner una imgen de auna letra o algo asi
     background size: cover(); para que sirve?*/
 main {
     padding-top: 70px;
     min-height: 100vh;
     /*backdrop-filter: blur(10); esto sirve para generar opacidad o transparencia de imagen y se aplica a la etiqueta COLOR */ 
-
 }
 /*Posicion del contenido escrito dentro de la imagen*/
-
 /*#DWrublev {
     position: relative;
 }
@@ -213,33 +215,26 @@ main {
 .DWrublev__titulo h2 {
     text-align: center;
 }*/
-
- /*dentro aplicaremos propiedades y a esas propiedades sus repectivos valores */ 
-    /* tipos de medidas
+/*dentro aplicaremos propiedades y a esas propiedades sus repectivos valores */ 
+ /* tipos de medidas
     % tamaño relativo
     px tamaño fijo
     vh: se agrega a height si quiero que tome toda la pantalla
     vw:se a width si quiero que tome todo el ancho*/
 
-.frase2 {
+/*.frase2 {
     background-color: rgb(161, 119, 14);
     width: 100%;
     height: 100px;
-
-    
-
 }
 .frase2 h2 {
     text-align: center;
     align-items: center;
-   
-
 }
 .frase2 h2 div a {
     text-align: center;
     margin-top: 14px;
-    
-}
+}*/
 /*METODOLOGIA BEM= BLOQUE /ELEMENTO /MODIFICADOR */
 /*#presentaciondeikons {
     width: 100%;
@@ -257,26 +252,26 @@ main {
     ya sea para ir induciendo al cliente en lo que le quiero vender etc*/
     /*position: relative;*/
 /*#presentaciondeikons img {
+
     width: 300px;
     height: 400px;
 }
 /*#presentaciondeikons article { /*esto es para darle fondo al cuadro, si es que yiene un fondo propio*/
 
-/*estilos footer comun a todos los links*/
+    /*FOOTER, COMUN A TODOS LOS LINKS*/
 #footer {
    /* position: relative;
     bottom: 0;*/
     margin-top: auto; 
     width: 100%;
     height: auto;
-    background-color: rgb(161, 119, 14);
+    background-color: #a47f00;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
     /*gap: 80px;*/
-
 }
 .footer__logo img{
     width: 100%;
@@ -294,14 +289,6 @@ main {
     gap: 10px;
     padding-top: 40px;
 }
-.footer__links ul li a{
-    box-shadow: 2px 2px white;
-    transition: 2s;
-    background-image: linear-gradient(to letf gray, black);
-}
-.footer__links ul li {
-    list-style-type: none;
-}
 .footer__redes a img {
     width: 100%;
     height: 40px;
@@ -311,11 +298,23 @@ main {
     border-radius: 8px;
 }
 
-/*+++++++++++++++++++++++++++++++++*/
-/*PAGINA DE GALERIA con grid*/
-/*+++++++++++++++++++++++++++++++++*/
+/*APLICACION DE GRADIENTES U ANIMACIONES*/
+.footer__links ul li a{
+    box-shadow: 2px 2px  #f2dc93;
+    transition: 2s;
+    background-image: linear-gradient(to letf rgba(216, 237, 50, 0.809), black);
+}
+.footer__links ul li {
+    list-style-type: none;
+}
 
-.cardg{
+
+/*+++++++++++++++++++++++++++++++++*/
+/*PAGINA DE GALERIA*/
+/*+++++++++++++++++++++++++++++++++*/
+/*contenido debajo del carrousel*/
+
+.cardgtxt1{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -323,16 +322,18 @@ main {
         padding: 8%;
     }
 }
+/*franja grande entre cuadros de imgs comun a todas las franjas*/
 .letragrande{
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 1%;
+    padding-top: 2%;
     background-color:  darkgoldenrod;
     text-align: center;
 }
+/*txts largos de cada imagen*/
 #f4{
     width: 100%;
     height: auto;
@@ -348,9 +349,32 @@ main {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+#f6{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+} 
+#f7{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }  
-   /*Caja de los Cuatro Animales*/
-   /*Caja de la cara de Cristo y sus explicaciones*/
+#f8{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+} 
+/*Caja de la cara de Cristo y sus explicaciones*/
 /*letra debajo de la cara de Cristo*/
 .letracaradeXC{
     width: 100%;
@@ -360,6 +384,7 @@ main {
     text-align: center;
     padding-top: 5%;
 }
+/*Caja de la cara de Cristo y sus explicaciones*/
 .letracordejhs{
     width: 100%;
     height: auto;
@@ -370,11 +395,24 @@ main {
 }
 
 /* pantocrator galeria */
-
-/*form{
+/*Corazon de CRisto*/
+ #coriesu{
     width: 100%;
     height: auto;
-}*/
+ }
+ /*casi laimagen completa de JHS*/
+ #AOXC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
 /*#galeriaikon {
     width: 100%;
     height: auto;
@@ -467,7 +505,7 @@ main {
     grid-column: 3/4;/*en donde quiero ubicar mi titulo o info en las grillas*/
    /** grid-row: 1/2;/*se ubica en las filas lo escrito en mas palabras */
    /** overflow: scroll;/*con esto se oculta los elementos se hace un slide de textos*/
-#ikonsimag
+/*#ikonsimag
 {
     display: grid;
     grid-template-columns:repeat(2, 1fr);
@@ -483,28 +521,24 @@ main {
 }
 .tamañoBox h1{
     position: absolute;/*junto con el relative nos rea el esapcio en el que se pueda poner el text en la imagen*/
-    top: 0;
+   /* top: 0;
     background-color: darkgoldenrod;
     text-align: center;
     width: 100%;
 
-}
-.tamañoBox img
+}*/
+/*.tamañoBox img
 {
     width: 800px;
     height: 400px;
 }
 .Ikons1{
-    grid-area: ikons1;/*para indicar a la img que lugar ocupar dentro de la grilla */
-}
-.Ikons2{
+   /* grid-area: ikons1;/*para indicar a la img que lugar ocupar dentro de la grilla */
+/*.Ikons2{
     grid-area: ikons2;
-}
-
-
-
-/*diseño responsive*/
-@media (max-width: 768px) {
+}*/
+/*DISEÑO RESPONSIVO*/
+/*@media (max-width: 768px) {
     #frase2 {
         max-width: auto;
     }
@@ -521,12 +555,8 @@ main {
         grid-template-areas: none;
 
     }
-}
-
-
-
-
-@media (max-width: 768px) {
+}*/
+/*@media (max-width: 768px) {
     #ikonsimag{
     grid-template-columns:repeat(1, 1fr);
     grid-template-rows: repeat(4, 200px);
@@ -558,10 +588,10 @@ main {
     .tamañoBox h1 {
         max-width: auto;
     }
-}
+}*/
 
+/*SISTEMA RESPONSIVO DEL FOOTER*/
 
-/*sistema responsivo del footer*/
 @media (max-width: 768px){
     .footer__logo img{
         width: 100%;
@@ -605,7 +635,6 @@ main {
         display: flex;
         flex-direction: row;
         gap: 10px;
-        
     }
 }
 /*Flex Wrap es para hacer salto de lineas y asi las cajas se van ubicando una debajo de las otras respetando el sistema responsivo*/
