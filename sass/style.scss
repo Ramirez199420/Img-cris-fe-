@@ -271,6 +271,7 @@ main {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    background-image: linear-gradient(to letf rgba(216, 237, 50, 0.809), black);
     /*gap: 80px;*/
 }
 .footer__logo img{
@@ -298,17 +299,22 @@ main {
     border-radius: 8px;
 }
 
-/*APLICACION DE GRADIENTES U ANIMACIONES*/
-.footer__links ul li a{
-    box-shadow: 2px 2px  #f2dc93;
+/*APLICACION DE GRADIENTES y ANIMACIONES, palicar las animaciones a cada una de las redes */
+.footer__redes a img{
+    box-shadow: 3px 3px  #0e0e0e;
     transition: 2s;
-    background-image: linear-gradient(to letf rgba(216, 237, 50, 0.809), black);
+    /*1er valor eje X 2do valor eje Y
+     se puede agregar valores + o -*/
+    /*transform: translate(-3px, -3px);*/
+    /*transform: scale(2, 2);*/
+    /*transform: rotate(360deg);*/
+    filter: drop-shadow(5px 5px 4px rgb(40, 36, 36));
+    transform: skewy(40deg);
 }
 .footer__links ul li {
     list-style-type: none;
+
 }
-
-
 /*+++++++++++++++++++++++++++++++++*/
 /*PAGINA DE GALERIA*/
 /*+++++++++++++++++++++++++++++++++*/
@@ -412,6 +418,15 @@ img{
     max-height: 100%;
     display: block;
     margin: 0 auto;
+}
+#Replicas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 5%;
 }
 /*#galeriaikon {
     width: 100%;
