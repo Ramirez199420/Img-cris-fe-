@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <header>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
          <div class="container-fluid">
            <a class="navbar-brand" href="#"><img src="icons/Logo Sacros.png" alt="logoikon" width="100px" style="background-color: #a47f00;"></a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +42,8 @@
              </form>-->
            </div>
          </div>
-  </nav>
+   </nav>
+  </header> 
   <main>
     <!--Carrousel-->
      <div id="carouselExample" class="carousel slide">
@@ -68,10 +70,10 @@
       
     <!--Exposicion de los 4 iconos-->
       <!--encabezados-->
-       <section class="art1">
+       <section class="arte1">
         <article class="letras">
-          <h3 class="l1">Iconografia Sagrada</h3>
-          <h1 class="l2">Conozca el significado de nuestras obras</h1>
+          <h1 class="l1">Iconografia Sagrada</h1>
+          <h2 class="l2">Conozca el significado de nuestras obras</h2>
         </article>
        </section>
 
@@ -92,7 +94,7 @@
              <div class="card2" style="width: 18rem;">
                <img src="Images/iconografia/Virgen de Fatima.jpeg" class="card-img-top" alt="fatima">
                  <div class="card-body">
-                   <h5 class="card-title">Card title</h5>
+                   <h5 class="fati__por">Card title</h5>
                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                    <a href="#" class="btn" style="background-color: #bbbbb5">En breve</a>
                  </div>
@@ -101,7 +103,7 @@
              <div class="card3" style="width: 18rem;">
                <img src="Images/iconografia/Virgen de las Fuentes.jpeg" class="card-img-top" alt="Fuentes">
                   <div class="card-body3">
-                   <h5 class="card-title">Card title</h5>
+                   <h5 class="fuentes__vir">Card title</h5>
                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                    <a href="#" class="btn" style="background-color: #bbbbb5" >En breve</a>
                   </div>
@@ -110,7 +112,7 @@
              <div class="card4" style="width: 18rem;">
                <img src="Images/iconografia/Angel Custodio.jpeg" class="card-img-top" alt="Angel">
                   <div class="card-body4">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="custodio__an">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn" style="background-color: #bbbbb5">En breve</a>
                   </div>
@@ -119,8 +121,8 @@
       <!--Formulario-->
        <section class="contact_form">
           <article class="formulario">      
-            <h1>Contactanos</h1>
-              <h3>¿Quieres adquirir algunos de nuestros iconos?</h3>
+            <h3 class="contac">Contactanos</h3>
+              <h4 class="quest">¿Quieres adquirir algunos de nuestros iconos?</h4>
                 <form action="submeter-formulario.php" method="post">       
                       <p>
                         <label for="nombre" class="colocar_nombre">Nombre
@@ -167,12 +169,12 @@
   <footer id="footer">
         <!--estructura #3-->
           <!--cajas del footer/ la primera del logo-->
-        <article class="footer__logo">
+        <div class="footer__logo">
             <img src="icons/Logo big.png" alt="logogb">
 
-        </article>
+        </div>
          <!--cajas del footer/ la 2da link de navegacion-->
-        <article class="footer__links">
+        <div class="footer__links">
              <ul>
                 <li><a href="#">INICIO</a></li>
                 <li><a href="pages/conocenos.html">CONOCENOS</a></li>
@@ -180,14 +182,14 @@
                 <li><a href="pages/Cursos.html">CURSOS</a></li>
                 <li><a href="pages/galeria.html">GALERIA</a></li>
              </ul>
-        </article>
+        </div>
          <!--cajas del footer/ la 3ra link de redes-->
-        <article class="footer__redes">
+        <div class="footer__redes">
             <a class="instagram" href="https://instagram.com/tallerikon3?igshid=OGY3MTU3OGY1Mw=="><img src="icons/icono de instagram.jpeg" alt="instagramikon"></a> 
             <a class="Email" href="mailto:sacrosartesadf@gmail.com"><img src="icons/icono de mail.png" alt="mailikon"></a>
             <a class="telefono" href="tel:+541138426352"><img src="icons/icono de telefono.jpeg" alt="telefonoikon"></a>
             <a class="telegram" href="https://t.me/Ikonadf"><img src="icons/icono de telegram.png" alt="telegramikon"></a>
-        </article>    
+        </div>    
   </footer>
   <!--link de js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

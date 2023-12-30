@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*RESET CSS*/
+/*resetCSS*/
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +10,21 @@
   /* border: ;*/
 }
 
+/***************/
+/*enlaces de carpetas de externas a sass mediante import*/
+/* variables aplicadas a SASS que ya lo use en anidaciones*/
 /*EL FOOTER TIENE LA MISMA ESTRUCTURA PARA CADA INDEX */
 /*pagina de index*/
 /*Encabezado de inicio*/
-.art1 {
+.arte1 {
   display: flex;
   justify-content: center;
   text-align: center;
   padding-top: 5%;
+}
+.arte1 .l2 {
+  font-size: 30px;
+  color: rgb(198, 198, 193);
 }
 
 /*Pantocrator*/
@@ -58,6 +65,81 @@
   display: flex;
   text-align: center;
   padding: 40px;
+}
+
+.descrip__cono {
+  font-size: 20px;
+  color: #a8a8a8;
+}
+
+/*Pagina de Cursos*/
+/*Anidaciones de sass*/
+#boxCurso1 {
+  width: 300px;
+  height: 300px;
+  background-color: #b2eded;
+}
+#boxCurso1 .boxCurso1__cur1 {
+  width: 100px;
+  height: 100px;
+  background-color: #b1ac99;
+}
+#boxCurso1 .boxCurso1__cur1 h1 {
+  color: #8f8d88;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/*+++++++++++++++++++++++++++++++++*/
+/*PAGINA DE GALERIA*/
+/*+++++++++++++++++++++++++++++++++*/
+#replica {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 600px 250px;
+  grid-template-areas: "re1 re2 re3 re4" "re1 re2 re3 re4";
+}
+
+/*tamaño de las imgs en sí*/
+.tamañoBoxx {
+  width: 100%;
+  height: auto;
+}
+
+.re1 {
+  grid-area: "re1";
+}
+
+.re2 {
+  grid-area: "re2";
+}
+
+.re3 {
+  grid-area: "re3";
+}
+
+.re4 {
+  grid-area: "re4";
+}
+
+/*ikonos con ruta absoluta de la galeria*/
+.re1 {
+  background-image: url(../Images/iconografia/jesus\ n1.jpeg);
+  background-size: cover;
+}
+
+.re2 {
+  background-image: url(../Images/iconografia/jesus\ v2.jpeg);
+  background-size: cover;
+}
+
+.re3 {
+  background-image: url(../Images/iconografia/jesus\ a3.jpeg);
+  background-size: cover;
+}
+
+.re4 {
+  background-image: url(../Images/iconografia/jesus\ r4.jpeg);
+  background-size: cover;
 }
 
 /*pagina de contacto, parte de formulario comun con el index*/
@@ -133,14 +215,14 @@ span {
   color: #0e0e0e;
 }
 
-h1 {
+.contac {
   font-size: 39px;
   text-align: letf;
   padding-bottom: 20px;
   color: #a47f00;
 }
 
-h3 {
+.quest {
   font-size: 16px;
   padding-bottom: 30px;
   color: #0e0e0e;
@@ -262,7 +344,7 @@ main {
   justify-content: space-around;
   align-items: center;
   padding: 20px;
-  background-image: linear-gradient(to letf rgba(216, 237, 50, 0.809), black);
+  background-image: linear-gradient(to letf rgba(92, 102, 5, 0.809), rgb(217, 174, 174));
   /*gap: 80px;*/
 }
 
@@ -289,11 +371,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.footer__redes a img {
-  height: 40px;
-  border-radius: 8px;
 }
 
 /*APLICACION DE GRADIENTES y ANIMACIONES, palicar las animaciones a cada una de las redes */
@@ -412,7 +489,7 @@ main {
   height: auto;
 }
 
-/*casi laimagen completa de JHS*/
+/*casi laimagen completa de JHS y la cita de apoc*/
 #AOXC {
   display: flex;
   justify-content: center;
@@ -426,22 +503,31 @@ main {
   height: 100vh;
 }
 
+/*#cita{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}*/
+/*#cita .tarjt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}*/
 /*img{
     max-width: 100%;
     max-height: 100%;
     display: block;
     margin: 0 auto;
 }*/
-#Replicas {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-  padding: 5%;
-}
-
+/*#Replicas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 5%;
+}*/
 /*#galeriaikon {
     width: 100%;
     height: auto;
