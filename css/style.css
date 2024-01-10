@@ -774,7 +774,7 @@ background-position: center;*/
     gap: 15px;
     border-radius: 8px;
   }
-  .footer__links ul {
+  .footer__links ul a {
     width: auto;
     display: flex;
     flex-direction: row;
@@ -793,7 +793,7 @@ background-position: center;*/
     width: 100%;
     height: auto;
   }
-  .footer__links ul {
+  .footer__links ul a {
     width: auto;
     display: flex;
     flex-direction: row;
