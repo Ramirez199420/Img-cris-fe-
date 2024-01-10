@@ -788,7 +788,7 @@ main {
         gap: 15px;
         border-radius: 8px;
     }
-    .footer__links ul a {
+    .footer__links ul {
         width: auto;
         display: flex;
         flex-direction: row;
@@ -807,7 +807,7 @@ main {
         width: 100%;
         height: auto;
     }
-    .footer__links ul a/*:nth-child(3)a, la a esta es el link que me debe aparecer:hover, y se agrega el color en la llave, es la ue va a a reaccionrcuando se pasa el mouse*/
+    .footer__links ul /*:nth-child(3)a, la a esta es el link que me debe aparecer:hover, y se agrega el color en la llave, es la ue va a a reaccionrcuando se pasa el mouse*/
     { 
         width: auto;
         display: flex;
@@ -829,4 +829,38 @@ main {
         gap: 15px;
     }
 }
+@media (max-width: 320px){
+     #footer{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 0;
+    }
+    .footer__logo img{
+        width: 100%;
+        height: auto;
+    }
+    .footer__redes a img{
+        width: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 10px;
+    }
+    .footer__redes{
+        width: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        border-radius: 8px;
+    }
+    .footer__links ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
 /*Flex Wrap es para hacer salto de lineas y asi las cajas se van ubicando una debajo de las otras respetando el sistema responsivo*/
