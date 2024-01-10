@@ -150,6 +150,43 @@ $font-title:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
     background-size: cover; 
     }   
 /*pagina de contacto, parte de formulario comun con el index*/
+/*Diseño responsive de formulario de contacto*/
+@media (max-width: 480px){
+     .contact_form{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 0;
+    }
+   /* .footer__logo img{
+        width: 100%;
+        height: auto;
+    }
+    .footer__redes a img{
+        width: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        border-radius: 10px;
+    }
+    .footer__redes{
+        width: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        border-radius: 8px;
+    }
+    .footer__links ul {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }*/
+}
+/***********/
+
 .contact_form{  
   width: 460px; 
   height: auto;
@@ -386,10 +423,20 @@ main {
     padding-top: 40px;
 }
 .footer__redes {
-    width: 100%;
+    width: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 15px;
+    
+}
+.footer__redes a img{
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+
 }
 
 
@@ -717,6 +764,12 @@ main {
 /*SISTEMA RESPONSIVO DEL FOOTER*/
 
 @media (max-width: 768px){
+     #footer{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        gap: 0;
+    }
     .footer__logo img{
         width: 100%;
         height: auto;
@@ -726,6 +779,14 @@ main {
         display: flex;
         flex-direction: row;
         gap: 10px;
+        border-radius: 10px;
+    }
+    .footer__redes{
+        width: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        border-radius: 8px;
     }
     .footer__links ul {
         width: auto;
@@ -755,10 +816,17 @@ main {
         justify-content: center;
     }
     .footer__redes a img{
-        width: 100%;
+        width: 40px;
         display: flex;
         flex-direction: row;
         gap: 10px;
+        border-radius: 10px;
+    }
+    .footer__redes {
+        width: 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
     }
 }
 /*Flex Wrap es para hacer salto de lineas y asi las cajas se van ubicando una debajo de las otras respetando el sistema responsivo*/
